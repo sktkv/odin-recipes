@@ -1,15 +1,19 @@
 * {
     background-color: rgb(254, 254, 254);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Helvetica;
 }
 
 .index img{
     height:100px;
     width:100px;
+    box-sizing: border-box;
+    padding:10px;
 }
 
 .plantdescription{
     text-align: justify;
+    width:980px;
+    margin:auto
 }
 
 .topheading{
