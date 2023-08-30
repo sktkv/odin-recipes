@@ -1,6 +1,6 @@
 * {
     background-color: rgb(254, 254, 254);
-    font-family: Helvetica;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .index img{
@@ -10,14 +10,54 @@
     padding:10px;
 }
 
+  
 .plantdescription{
     text-align: justify;
     width:980px;
     margin:auto
 }
 
-.topheading{
+.topbanner{
+    background-color: rgb(255, 255, 255);
+    margin:auto
+}
+.topbanner .topheading{
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 11, 7);
+    font-size: 30px;
+    font-weight: bold;
+    height:50px;
+    width:370px;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    display:table;
+}
+
+.plants_nav{
+    position:relative;
+    display:inline-block;
+}
+
+.plants_nav_content{
+    display:none;
+    position:absolute;
+    width:100%;
+    overflow:auto;
+    padding:12px 16px; 
+}
+
+.plants_nav:hover .plants_nav_content{
+    display:block;
+}
+
+
+.midheading{
+    text-align: center;
+    margin:0 auto;
+
 }
 
 .contentheading{
