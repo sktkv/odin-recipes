@@ -36,27 +36,44 @@
     display:table;
 }
 
-.plants_nav{
-    position:relative;
+/* Navigation Design*/
+.navigation{
     display:inline-block;
+    z-index:10;
+    margin: 20px;
 }
 
-.plants_nav_content{
-    display:none;
-    position:absolute;
-    width:100%;
-    overflow:auto;
-    padding:12px 16px; 
+.nav_butn{
+    display:inline-block;
+    padding:10px;
+    background-color:powderblue;
+    color: black;
+    cursor: pointer;
+    border: none;
 }
 
-.plants_nav:hover .plants_nav_content{
-    display:block;
+.nav_butn a:link, .nav_butn a:visited{
+    background-color:powderblue;
+    color: black;
+    text-decoration: none;
+
+}
+
+.nav_butn a:hover{
+    background-color:aqua;
+    text-decoration: none;
+}
+
+.nav_butn:hover{
+    background-color: aqua;
 }
 
 
+/*Heading designs*/
 .midheading{
     text-align: center;
     margin:0 auto;
+    position:absolute;
 
 }
 
