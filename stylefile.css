@@ -38,9 +38,10 @@
 
 /* Navigation Design*/
 .navigation{
-    display:inline-block;
-    z-index:10;
-    margin: 20px;
+    display:block;
+    width:20%;
+    margin: auto;
+    text-align:center;
 }
 
 .nav_butn{
@@ -71,9 +72,11 @@
 
 /*Heading designs*/
 .midheading{
+    padding:15px;
     text-align: center;
     margin:0 auto;
-    position:absolute;
+    font-size:20px;
+    font-weight: bold;
 
 }
 
