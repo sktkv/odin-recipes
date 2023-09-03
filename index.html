@@ -3,47 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> The Foraging Guide </title>
+    <title> Organic Gardening </title>
     <link rel = "stylesheet" type="text/css" href ="stylefile.css">
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            flex-direction: column;  
+            justify-content: space-between;        
+
+        }
+
+            .topheading{
+                background-color: rgba(141, 252, 208, 0.489);
+                display: flex;
+                justify-content: flex-end;
+                gap:15px;
+                padding:15px;
+            }
+
+            .content{
+                display: flex;
+                flex:1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        
+                .logotitle{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    align-items: center;
+                
+
+                }
+
+                .logotitle .bold_text{
+                    font-weight: bold;
+                    font-size: 35px;
+                }
+
+                .logotitle .subtitle{
+                    
+                    font-size: 15px;
+                }
+                
+
+                .navbuttons{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 10px;
+                    gap:20px;
+
+                }
+
+                    button{
+                        background-color: rgba(141, 252, 208, 0.489);
+                        border:none;
+                        border-radius: 5px;
+                        padding:10px;
+                        margin:10px;
+                        margin-top:20px;
+                        font-size: 20px;
+
+
+                    }
+
+        a {
+            text-decoration: none;
+            color:inherit;
+            background-color: transparent;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- main heading, uniform style and content across all pages--> 
-    <div class = "topbanner">
-        <div class = "topheading"> 
-                <img src="sprout4.png" style="height:30px; width:auto;float:left;margin-top:2px;margin-right:4px;background: transparent; padding-left:3px">
-                The Foraging Guide
-                <img src="sprout4.png" style="height:30px; width:auto;float:right;margin-top:2px;margin-left:4px;background: transparent;padding-right:3px">
-        </div>
+    
+    <div class = "topheading">
+        <a href ="#"> About </a>
+        <a href = "#"> Contact </a>
     </div>
-
-    <!-- navigation toolbar-->
-    <div class = "navigation"> 
-        <div class="nav_butn"> <a href = "#"> About </a></div>
-    </div>
-
-    <!-- page heading, uniform style and different content across all pages-->
-    <div class = "midheading"> <h2> Index </h2> </div>
-
-    <!-- content division-->
-    <div class = "index">
-        <div style="float:left; width:50%; position:relative;> <h3 style="text-align: center";> Plants </h3>
-            <ul>
-                <li> <a href ="basale.html"> Basale (Malabar Spinach) </a> <br> <img src = "basale.jpg"></li>
-            
-            </ul>
+        
+    <div class = "content">
+        <div class="logotitle">
+            <img src = "sprout4.png" alt="icon of plants" style="height:50px; width:auto">
+            <div class = "bold_text"> Organic Gardening </div>
+            <div class = "subtitle" style="margin-top: 10px;"> Your guide to a green thumb. </div>
         </div>
-       
-        <div style="float:right; width:50%;position:relative>
-            <h3 style="text-align: center";> Recipes </h3>
-            <ul> 
-                <li> <a href = "soppina_pallya.html"> Soppina Pallya </a></li>
-            </ul> 
+
+        <div class="navbuttons">
+            <button class="forum"> <a href = "#"> Forum </a> </button>
+            <button class="foraging"> <a href = "#">Foraging </a></button>
+            <button class = "recipe"> <a href = "#">Recipes </a></button>
         </div>
-    </div>
-    <br>
-    <hr>
-    <div style = "display:block">
-        <i>Source: Chasing Soppu </i>
     </div>
 </body>
 </html>
