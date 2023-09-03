@@ -10,24 +10,31 @@
             height:100vh;
             display:flex;
             flex-direction: column;  
-            justify-content: space-between;        
+            justify-content: space-between;
+            background-image: url("bgd_leaf.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
         }
 
             .topheading{
-                background-color: rgba(141, 252, 208, 0.219);
+                background-color: rgba(25, 73, 54, 0.632);
                 display: flex;
                 justify-content: flex-end;
                 gap:15px;
                 padding:15px;
+                color:rgba(224, 247, 212, 0.842)
             }
 
             .content{
                 display: flex;
-                flex:1;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                background-color:transparent; 
+                
+                               
             }
 
         
@@ -36,32 +43,29 @@
                     flex-direction:column;
                     justify-content: center;
                     align-items: center;
-                
+                    background-color: rgb(230, 245, 239);
+                    border-radius: 2vmax;
+                    padding-top: 10px;
+                    margin:10px
 
                 }
 
-                .logotitle .bold_text{
-                    font-weight: bold;
-                    font-size: 35px;
-                }
-
-                .logotitle .subtitle{
-                    
-                    font-size: 15px;
-                }
+               
                 
 
                 .navbuttons{
                     display:flex;
                     flex-direction: row;
                     justify-content: center;
-                    margin-top: 10px;
+                    margin: 10px;
                     gap:20px;
+                    background-color: transparent;
+                    
 
                 }
 
                     button{
-                        background-color: rgba(141, 252, 208, 0.219);
+                        background-color: rgba(4, 57, 36, 0.123);
                         border:none;
                         border-radius: 5px;
                         padding:10px;
@@ -72,6 +76,13 @@
 
 
                     }
+            .footer{
+                background-color:rgba(25, 73, 54, 0.632) ;
+                text-align: center;
+                font-size: 10px;
+                font-style: italic;
+                color:rgba(224, 247, 212, 0.842)
+            }
 
         a {
             text-decoration: none;
@@ -90,16 +101,21 @@
         
     <div class = "content">
         <div class="logotitle">
-            <img src = "sprout4.png" alt="icon of plants" style="height:50px; width:auto">
-            <div class = "bold_text"> Organic Gardening </div>
-            <div class = "subtitle" style="margin-top: 10px;"> Your guide to a green thumb. </div>
+            <img src = "sprout4.png" alt="icon of plants" style="height:50px; width:auto;background-color: transparent;">
+            <div class = "bold_text" style="font-weight: bold; font-size: 35px; background-color:transparent"> Organic Gardening </div>
+            <div class = "subtitle" style="margin-top: 10px; font-size: 15px;background-color:transparent"> Your guide to a green thumb. </div>
+
+            <div class="navbuttons">
+                <button class="forum"> <a href = "#"> Forum </a> </button>
+                <button class="foraging"> <a href = "#">Foraging </a></button>
+                <button class = "recipe"> <a href = "#">Recipes </a></button>
+            </div>
         </div>
 
-        <div class="navbuttons">
-            <button class="forum"> <a href = "#"> Forum </a> </button>
-            <button class="foraging"> <a href = "#">Foraging </a></button>
-            <button class = "recipe"> <a href = "#">Recipes </a></button>
-        </div>
+    </div>
+
+    <div class = "footer">
+        Created by: Sookthi (DT2023013)
     </div>
 </body>
 </html>
