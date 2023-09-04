@@ -5,50 +5,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Basale </title>
         <link rel = "stylesheet" type="text/css" href ="stylefile.css">
+        <style>
+            body{
+            /* height:100vh; */
+            display:flex;
+            flex-direction: column;  
+            justify-content: space-between;
+            background-image: url("bgd_leaf.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+            .topheading{
+            display:flex;
+            justify-content: space-between;
+        }
+
+            .topheading a{
+                color:inherit;
+                text-decoration: none;
+                background-color: transparent;
+        
+            }
+        </style>
     </head>
     <body>
-        <!-- main heading, uniform style and content across all pages--> 
-        <div class = "topbanner">
-            <div class = "topheading"> 
-                    <img src="sprout4.png" style="height:30px; width:auto;float:left;margin-top:2px;margin-right:4px;background: transparent; padding-left:3px">
-                        The Foraging Guide
-                    <img src="sprout4.png" style="height:30px; width:auto;float:right;margin-top:2px;margin-left:4px;background: transparent;padding-right:3px">
+         
+        <div class="topheading">
+            <!-- use same stylesheet as in index.html -transfer to main cssfile / style="text-decoration: none;color: inherit;background-color: transparent;"-->
+            
+            <div class = "leftside" style="background-color: transparent;">
+                <a class = "link" href = "index.html"> Home</a>
             </div>
+            
+            <div class = "rightside" style="background-color: transparent;display:flex; gap:15px">
+                <a class = "link" href ="#"> About </a>
+                <a class = "link" href = "#"> Contact </a>
+            </div>
+    
         </div>
+        
 
-        <!-- navigation toolbar-->
-        <div class = "navigation"> 
-            <div class="nav_butn"> <a href = "index.html"> Home </a> </div>
-            <div class="nav_butn"> <a href = "#"> About </a></div>
-        </div> 
-
-        <!-- page heading, uniform style and different content across all pages-->
-            <div class = "midheading">  Plants </div>
-
+        <div class="pagecontainer" >
+            <div class ="pagetitle" style="background-color: transparent; font-weight: bold; font-size: 30px;padding:10px"> 
+                <a href = "foraging.html" style="color:inherit; text-decoration: none;background-color: transparent"> The Foraging Guide </a>
+            </div>
+        
         <!-- content-->
-        <div class = "contentheading">
-            <h3> Basale Soppu (Malabar Spinach)</h3>
-            <img src = "basale.jpg" style="height:250px;width:250px">
-            <p> Scientific name: <i>Basella Alba </i> L.</p>
-        </div>
-        <div class = "plantdescription">
-            <p> <b> Usage: </b>  Food and medicine </p>
-            <p> <b> Where to find it: </b> Commonly grown as a potherb, wild plants
-                are found on hedges and unused lands</p>
-            <p> <b> Parts used: </b> Leaves and stem</p>
-            <p> <b>Habit: </b>Climbing Herb</p>
-            <p><b>Description: </b>A fleshy perennial climbing herb. The stems are
-                green or purplish and soft. Leaves are fleshy, thick, and have
-                a viscous consistency; ovate, rounded or cordate at base.
-                Flowers are small whitish, or tinged with pink, form in small
-                clusters on the end of short stems at the nodes. Fruit globose
-                or ovoid, dark purple and juicy. The juice is sometimes used as
-                a dye. These can be harvested all year-round and can be used
-                as a substitute for spinach.</p>
-            <p><b>Nutritional properties:</b>: Rich in Iron, Calcium and Vitamins A,
-                C and K. Used to check malnutrition, particularly in children.
-                </p>
-        </div>
-       
+            
+                <div class = "contentheading">
+                    <p class = "common-name"> Basale Soppu (Malabar Spinach)<p>
+                    <img src = "basale.jpg" style="height:250px;width:250px">
+                    <p class = "sci-name"> Scientific name: <span style="font-style: italic; background-color: transparent;"> Basella Alba </span>L.</p>
+                </div>
+                <div class = "plantdescription">
+                    <p> <strong> Usage: </strong>  Food and medicine </p>
+                    <p> <strong> Where to find it: </strong> Commonly grown as a potherb, wild plants
+                        are found on hedges and unused lands</p>
+                    <p> <strong> Parts used: </strong> Leaves and stem</p>
+                    <p> <strong>Habit: </strong>Climbing Herb</p>
+                    <p> <strong>Description: </strong>A fleshy perennial climbing herb. The stems are
+                        green or purplish and soft. Leaves are fleshy, thick, and have
+                        a viscous consistency; ovate, rounded or cordate at base.
+                        Flowers are small whitish, or tinged with pink, form in small
+                        clusters on the end of short stems at the nodes. Fruit globose
+                        or ovoid, dark purple and juicy. The juice is sometimes used as
+                        a dye. These can be harvested all year-round and can be used
+                        as a substitute for spinach.</p>
+                    <p><strong>Nutritional properties:</strong>: Rich in Iron, Calcium and Vitamins A,
+                        C and K. Used to check malnutrition, particularly in children.
+                        </p>
+                </div>
+            </div>
+        
+            <div class = "footer">
+                Created by: Sookthi (DT2023013)
+            </div>
     </body>
     </html>
