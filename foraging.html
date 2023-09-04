@@ -5,11 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Foraging </title>
     <link rel = "stylesheet" type="text/css" href ="stylefile.css">
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            flex-direction: column;  
+            justify-content: space-between;
+            background-image: url("bgd_leaf.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        a{
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+       
+        .topheading{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .pagecontainer{
+            display:flex;
+            flex:1;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(230, 245, 239);
+            
+        }
+
+       .image-gallery {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:10px;
+        background-color: rgb(230, 245, 239)
+       }
+
+       .image-gallery > li {
+        flex-basis:250px; /*width: 350px; */
+        position: relative;
+        cursor:pointer;
+       }
+
+       .image-gallery li img{
+        object-fit: cover;
+        max-width:100%;
+        height:auto;
+        vertical-align: middle;
+        border-radius: 5px;
+       }
+
+       .overlay{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background: rgba(23, 63, 27, 0.502);
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: all 0.2s 0.1s ease-in-out;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 30px;
+        border-radius: 5px;
+        /* center overlay text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       }
+
+       .image-gallery li:hover .overlay{
+        transform: scale(1);
+       }
+
+        ul{
+            list-style-type: none;
+            
+        }
+
+        li{
+            background-color: rgb(230, 245, 239);
+        }
+        
+
+        
+
+    </style>
 </head>
 <body>
     <div class="topheading">
-        <!-- use same stylesheet as in index.html -transfer to main html -->
+        <!-- use same stylesheet as in index.html -transfer to main cssfile / style="text-decoration: none;color: inherit;background-color: transparent;"-->
+        
+        <div class = "leftside" style="background-color: transparent;">
+            <a class = "link" href = "index.html"> Home</a>
+        </div>
+        
+        <div class = "rightside" style="background-color: transparent;display:flex; gap:15px">
+            <a class = "link" href ="#"> About </a>
+            <a class = "link" href = "#"> Contact </a>
+        </div>
+
     </div>
 
+    <div class="pagecontainer" >
+        <div class ="pagetitle" style="background-color: transparent; font-weight: bold; font-size: 30px;padding:10px"> 
+            The Foraging Guide
+        </div>
+
+        <div class = "source" style="background-color: transparent; font-size: 20px"> <a href = "https://azimpremjiuniversity.edu.in/publications/2022/book/chasing-soppu">
+        Source: Chasing Soppu </a>
+        </div>
+
+        
+            <ul class="image-gallery">
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "basale.html"> 
+                        <div class = "overlay"> 
+                         <span style = "background-color: transparent;"> Basale </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "#"> 
+                        <div class = "overlay"> 
+                            <span style = "background-color: transparent;"> Text </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "#"> 
+                        <div class = "overlay"> 
+                            <span style = "background-color: transparent;"> Text </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "#"> 
+                        <div class = "overlay"> 
+                            <span style = "background-color: transparent;"> Text </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "#"> 
+                        <div class = "overlay"> 
+                            <span style = "background-color: transparent;"> Text </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="basale.jpg">
+                    <a href = "#"> 
+                        <div class = "overlay"> 
+                            <span style = "background-color: transparent;"> Text </span>
+                        </div>
+                    </a>
+                </li>
+
+                
+
+                
+
+            </ul>
+        </div>
+    </div>
+
+    <div class = "footer">
+        Created by: Sookthi (DT2023013)
+    </div>
 </body>
 </html>

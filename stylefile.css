@@ -7,6 +7,30 @@ body{
     height:100vhs
 }
 
+/* styles the header with navigation to about/home/contact/etc  */
+.topheading{
+    background-color: rgba(12, 34, 25, 0.425);
+    display: flex;
+    gap:15px;
+    padding:15px;
+    color:rgba(224, 247, 212, 0.842)
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+} 
+
+/* styles the header with navigation to about/home/contact/etc  */
+.footer{
+    background-color:rgba(12, 34, 25, 0.425) ;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    
+    
+
 .index img{
     height:100px;
     width:100px;
@@ -26,77 +50,6 @@ body{
     margin:auto
 }
 
-.topbanner{
-    background-color: rgb(255, 255, 255);
-    margin:auto
-}
-.topbanner .topheading{
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(1, 11, 7);
-    font-size: 30px;
-    font-weight: bold;
-    height:50px;
-    width:370px;
-    margin: 0 auto;
-    padding-top:5px;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-    display:table;
-}
-
-/* Navigation Design*/
-.navigation{
-    display:block;
-    width:20%;
-    margin: auto;
-    text-align:center;
-}
-
-.nav_butn{
-    display:inline-block;
-    padding:10px;
-    background-color:powderblue;
-    color: black;
-    cursor: pointer;
-    border: none;
-}
-
-.nav_butn a:link, .nav_butn a:visited{
-    background-color:powderblue;
-    color: black;
-    text-decoration: none;
-
-}
-
-.nav_butn a:hover{
-    background-color:aqua;
-    text-decoration: none;
-}
-
-.nav_butn:hover{
-    background-color: aqua;
-}
 
 
-/*Heading designs*/
-.midheading{
-    padding:15px;
-    text-align: center;
-    margin:0 auto;
-    font-size:20px;
-    font-weight: bold;
-
-}
-
-.contentheading{
-    text-align: center
-}
-
-.recipe_text .title_text{
-    font-weight: bold;
-}
-.recipe_text .ingredients{
-    font-style:italic
-}
 
