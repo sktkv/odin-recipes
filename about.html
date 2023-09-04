@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Basale </title>
+        <link rel = "stylesheet" type="text/css" href ="stylefile.css">
+        <style>
+            body{
+            /* height:100vh; */
+            display:flex;
+            flex-direction: column;  
+            justify-content: space-between;
+            background-image: url("bgd_leaf.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+            .topheading{
+            display:flex;
+            justify-content: space-between;
+        }
+
+            .topheading a{
+                color:inherit;
+                text-decoration: none;
+                background-color: transparent;
+        
+            }
+            
+            .aboutheading{
+                background-color: rgb(230, 245, 239);
+                display:flex;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 30px;
+                padding:20px
+            }
+
+            
+
+           .firstcontainer{
+            background-color: rgb(230, 245, 239);
+            display:flex;
+
+           }
+           .first-text{
+            flex-basis:200%;
+            padding-top:10px;
+            padding-left: 40px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+           }
+
+           .second-text{
+            padding-top:10px;
+            padding-left: 10px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+           }
+           
+           .secondcontainer {
+                background-color: rgb(230, 245, 239);
+                display:flex;
+                gap:8px;
+                align-items: flex-start;
+                padding:0px 20px 5px
+
+            }
+
+            .third-text{
+                padding-top:30px
+            }
+
+           .profileimage{
+            display:flex;
+            max-width: 15%;
+            
+           }
+
+           .profileimage img{
+            min-width: 100%;
+            height:auto
+           }
+            
+        </style>
+    </head>
+    <body>
+    
+        <div class="topheading">
+            <!-- use same stylesheet as in index.html -transfer to main cssfile / style="text-decoration: none;color: inherit;background-color: transparent;"-->
+            
+            <div class = "leftside" style="background-color: transparent;">
+                <a class = "link" href = "index.html"> Home</a>
+            </div>
+            
+            <div class = "rightside" style="background-color: transparent;display:flex; gap:15px">
+                <a class = "link" href = "#"> Contact </a>
+            </div>
+
+        </div>
+        
+        
+        <div class="aboutheading"> 
+            About 
+        </div>
+
+        <div class="firstcontainer">
+            <div class="first-text"><strong>What is this website?</strong> 
+                <br>
+                This website is an entry-point into sustainable gardening and consumption practices. 
+                In the Foraging section, you will find an index of some wild vegetables ('soppus' in Kannada) commonly seen around Bengaluru. 
+                Make sure you check out 'Chasing Soppu', linked in the source <a href = "foraging.html"> here</a>. 
+                <br>
+                In the days to come, we hope to create a database of easily growing plants in the city 
+                with information from local gardeners and include a forum for collaboration. 
+                <br>Watch this space for more! 
+            </div>
+
+            <div class="second-text"><strong>Why an organic life?</strong> 
+                <br>
+                People take to a more organic life for several reasons. For some, organic gardening
+                allows them to take a moment's rest from the bustle of their urban existence. 
+                Some people enjoy the healthy lifestyle that comes with it: the walking by lakes in search of foragable leaves, 
+                the hard work in managing a garden, and the satisfaction of eating food that's low-carbon-footprint and pesticide-free! 
+                <br>
+                <br>
+                Everyone, eventually, finds their own motivation. What are your reasons for sustainability?
+                
+            </div>
+        </div>
+
+
+        <div class="secondcontainer">
+            <div class="profileimage"> 
+                <img src = "portrait.png" alt="cartoon portrait of website creator" style="height:50%; width: auto">
+            </div>
+
+            
+
+            <div class = "third-text">
+                <strong> About me:</strong> Hi, I'm Sookthi! I'm a first-year student at IIITB, studying for my M.Sc. in Digital Society. 
+                I created this website fas part of an assignment for a Web Application Development Course. 
+                <br>
+                <br>
+
+                <strong> Behind the scenes: </strong>
+                This was my first time creating a 'proper' website beyond basic HTML, and I've had a lot of fun with it. I followed along 
+                tutorials from <a href ="https://www.theodinproject.com/" target="_blank"> The Odin Project</a>, and on the way, learnt to set up a 
+                <a href = "https://github.com/sktkv/odin-recipes" target="_blank"> github repository</a>, and also dipped my hands into learning CSS FlexBox 
+                (which I was very nervous about, before). 
+                <br>
+                Looking forward to learning more and doing more! 
+            </div>
+
+        </div>
+
+        
+        
+        
+       <div class = "footer">
+        Created by: Sookthi (DT2023013)
+        </div>
+    </body>
+    </html>
