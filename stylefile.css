@@ -76,6 +76,16 @@ body{
     background-color: transparent
 
 }
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap:8px
+
+}
 /* styles the header with navigation to about/home/contact/etc  */
 .footer{
     background-color:rgba(12, 34, 25, 0.425) ;
